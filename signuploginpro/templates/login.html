@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>LOGIN FORM</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            <h1 class="text-center">LoginForm</h1>
+            <form method="POST">
+                {% csrf_token %}
+                {{ lform }}<br>
+                <center>
+                    <input type="submit" value="Login" class="btn btn-success">
+
+                <div class="linkClass">
+                            <a href="/signup/">Sinup </a>
+                        </div></center>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
